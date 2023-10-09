@@ -1,0 +1,7 @@
+name = "grafana-alert-tg-bot"
+account_id = "you_account_id"
+main = "src/index.ts"
+compatibility_date = "2023-10-09"
+
+[placement]
+mode = "smart"
