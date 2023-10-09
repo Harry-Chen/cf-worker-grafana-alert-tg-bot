@@ -1,10 +1,12 @@
-# CF Worker thats forwards Grafana alerting to Telegram
+# cf-worker-grafana-alert-tg-bot
+
+Cloudflare worker thats forwards Grafana alerts to Telegram.
 
 This tool would be useful if your Grafana instance cannot access telegram API.
 
 ## Usage
 
-```
+```bash
 cp wrangler.example.toml wrangler.toml
 vim wrangler.toml # put your own worker ID and account ID
 wrangler secret put BOT_TOKEN # telegram bot token
