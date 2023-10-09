@@ -50,7 +50,7 @@ export default {
 			return new Response('Method not allowed', { status: 405 });
 		}
 
-		const authHeader = request.headers.get('Authorization')?? '';
+		const authHeader = request.headers.get('Authorization') ?? '';
 		if (!authHeader.startsWith('Bearer ')) {
 			return new Response('No token provided', { status: 401 });
 		}
