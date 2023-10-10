@@ -16,3 +16,9 @@ wrangler deploy
 ```
 
 Then config you Grafana alerting webhook to `https://<your-worker>.workers.dev/` with authentication token `WEBHOOK_TOKEN`.
+
+## Query Parameters
+
+You can append the following query parameters to token url to override the default behavior:
+
+* `ignoreDataSourceError`: ignore all DataSourceError reported by Grafana if set to `true`, default to `false`
